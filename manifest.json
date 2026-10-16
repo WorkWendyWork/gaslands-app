@@ -1,6 +1,6 @@
 {
-  "name": "Gaslands Refuelled PWA Assistant",
-  "short_name": "GaslandsApp",
+  "name": "Gaslands: Tactical Flow",
+  "short_name": "TacticalFlow",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#121512",

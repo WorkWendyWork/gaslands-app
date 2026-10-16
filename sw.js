@@ -1,6 +1,6 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open('gaslands-pwa-v1').then((cache) => {
+    caches.open('gaslands-tactical-flow-v1').then((cache) => {
       return cache.addAll(['index.html', 'app.js', 'manifest.json']);
     })
   );
