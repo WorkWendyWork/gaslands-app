@@ -1,0 +1,9 @@
+{
+  "name": "Gaslands Refuelled PWA Assistant",
+  "short_name": "GaslandsApp",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#121512",
+  "theme_color": "#1a1e19",
+  "icons": []
+}
