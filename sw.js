@@ -1,15 +1,23 @@
+const CACHE_NAME = 'gaslands-flow-v9';
+const ASSETS = [
+  'index.html',
+  'app.js',
+  'data.js',
+  'manifest.json'
+];
+
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open('gaslands-tactical-flow-v1').then((cache) => {
-      return cache.addAll(['index.html', 'app.js', 'manifest.json']);
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(ASSETS);
     })
   );
 });
 
 self.addEventListener('fetch', (e) => {
   e.respondWith(
-    caches.match(e.request).then((response) => {
-      return response || fetch(e.request);
+    caches.match(e.request).then((cachedResponse) => {
+      return cachedResponse || fetch(e.request);
     })
   );
 });
